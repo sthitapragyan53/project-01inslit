@@ -1,0 +1,130 @@
+/* --- Global Styles/Variables (Add to your main CSS or :root) --- */
+:root {
+  --primary-color: #2ecc71; /* Green */
+  --text-color: #333;
+  --bg-color: #f8fbf7;
+  --card-bg: #ffffff;
+  --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* --- Page Layout --- */
+
+.testimonial-page {
+  background: var(--bg-color);
+  padding: 60px 80px;
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+.testimonial-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.testimonial-header .subtitle {
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.testimonial-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.testimonial-header .description {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --- Grid Layout --- */
+
+.testimonial-grid {
+  display: grid;
+  /* Default: 3 columns on large screens */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* --- Testimonial Card --- */
+
+.testimonial-card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes client info to the bottom */
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.testimonial-rating {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.testimonial-quote {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-style: italic;
+  color: #555;
+}
+
+/* --- Client Info --- */
+
+.client-info {
+  display: flex;
+  align-items: center;
+  margin-top: auto; /* Ensures info is always at the bottom */
+}
+
+.client-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 2px solid var(--primary-color);
+}
+
+.client-name {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.client-title {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* --- Responsiveness --- */
+
+@media (max-width: 992px) {
+  .testimonial-page {
+    padding: 40px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-page {
+    padding: 30px 20px;
+  }
+  
+  .testimonial-header h2 {
+    font-size: 2rem;
+  }
+}

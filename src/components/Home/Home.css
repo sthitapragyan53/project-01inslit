@@ -1,0 +1,246 @@
+.menu-page {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.home {
+  background-color: #fff;
+  color: #111;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.main-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  line-height: 1.3;
+  color: #111;
+  font-weight: 700; /* Font weight refers to the thickness or boldness of the characters in a typeface.  */
+}
+/* .hero-text h1 {
+  font-size: 4rem;
+  line-height: 1.3;
+  color: #111;
+} */
+
+.highlight {
+  background-color: #fffca8;
+  border-radius: 4px;
+  padding: 0 6px;
+}
+
+.subtext {
+  margin: 20px 0;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.order-btn,
+.download-btn {
+  border: none;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.order-btn {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.download-btn {
+  background: transparent;
+  border: 2px solid #2ecc71;
+  color: #2ecc71;
+}
+
+.order-btn:hover {
+  background: #27ae60;
+}
+
+.download-btn:hover {
+  background: #2ecc71;
+  color: #fff;
+}
+
+/* hero image section */
+
+.hero-image {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+.food-image img {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 50%;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.field {
+  display: flex;
+  align-items: left;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.mouse {
+  width: 50px;
+  height: 90px;
+  border: 3px solid #464644;
+  border-radius: 60px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #eef10a;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+  }
+}
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 60px;
+  }
+}
+
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 60px;
+  }
+}
+
+@keyframes spin {
+  from {
+    transfoem: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotating-image {
+  /* Link the keyframes, set duration, speed curve, and repetition */
+  animation-name: spin; /* Name of the keyframes rule */
+  animation-duration: 30s; /* How long one full rotation takes */
+  animation-timing-function: linear; /* Ensures constant speed (no acceleration/deceleration) */
+  animation-iteration-count: infinite; /* Makes the animation loop forever */
+}
+
+.review-card {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.user-name {
+  font-weight: 600;
+}
+
+.review-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.user-review {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive */
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    /* You might want to remove min-height: 100vh on smaller screens if the content overflows easily */
+    /* Consider setting it to a smaller value or removing it if the content is too tall */
+    /* min-height: auto; */
+    padding-top: calc(
+      60px + 60px
+    ); /* Adjust padding if needed for navbar and hero content */
+    padding-bottom: 60px;
+  }
+  .review-card {
+    /* When the layout stacks (flex-direction: column), reposition the card */
+    top: 20px;
+    right: auto; /* Remove the right offset */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Pull it back by half its width */
+    max-width: 80%; /* Don't let it get too wide */
+  }
+
+  .hero-text {
+    margin-bottom: 30px;
+  }
+
+  .hero-image img {
+    width: 70%;
+  }
+
+  /* Assuming you have a .navbar style */
+  /* .navbar {
+    flex-direction: column;
+  } */
+}

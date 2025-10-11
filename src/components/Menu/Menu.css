@@ -1,0 +1,212 @@
+/* Variables (Added for var(--primary-800)) */
+:root {
+  /* Replace with your actual dark primary color */
+  --primary-800: #1d3557; 
+  --accent-color: #2ecc71;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-page {
+  background: #f8fbf7;
+  padding: 60px 80px;
+  color: #111;
+}
+
+.menu-header p.category-title {
+  color: #2ecc71;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.menu-header h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* Layout */
+.menu-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* Categories */
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.category-item:hover {
+  transform: translateX(3px);
+}
+
+.category-item.active {
+  background: #2ecc71;
+  color: #fff;
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+/* Food Cards Section */
+.food-section {
+  flex: 1;
+  position: relative;
+}
+
+.food-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 15px;
+}
+
+.food-card {
+  background: #fff;
+  border-radius: 15px;
+  min-width: 300px;
+  min-height: 300px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Added wrapper class name for consistency */
+.food-card__content {
+    padding-bottom: 15px; /* Moved padding here from .food-card */
+}
+
+/* Image Container */
+.food-img {
+  overflow: hidden;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 5;
+
+  width: 100%;
+  
+  height: 15rem; /* Fixed height for the image area */
+  background-color: var(--primary-800);
+
+  border-radius: 0.5rem;
+}
+
+/* 🌟 FIX: Styles to make the image fill the red box */
+.food-img img {
+  
+  
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Key property to fill the container without distortion */
+  transition: transform 0.3s ease;
+}
+
+.fav-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  line-height: 1; /* Fixes centering of the heart symbol */
+}
+
+.food-card h3 {
+  font-size: 1rem;
+  margin: 10px 15px 5px 15px;
+  color: #222;
+}
+
+.food-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Arrows */
+.arrow-buttons {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.arrow {
+  background: #fff;
+  border: 2px solid #2ecc71;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow.right {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .menu-content {
+    flex-direction: column;
+  }
+
+  .category-list {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 10px; /* Added padding to prevent content clipping */
+  }
+
+  .food-cards {
+    /* Changed grid to flex for better horizontal scrolling on mobile */
+    display: flex; 
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 15px;
+  }
+  
+  .food-card {
+      min-width: 250px; /* Smaller width for mobile cards */
+  }
+}
