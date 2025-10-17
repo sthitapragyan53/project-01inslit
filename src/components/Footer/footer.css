@@ -1,0 +1,102 @@
+/* ==================== FOOTER ==================== */
+
+.footer {
+    background-color: #f8f8f8; /* Very light grey background to match the image */
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: #333; /* Default dark text color */
+}
+
+.footer__container {
+    max-width: 968px;
+    margin-left: auto; /* Center the container */
+    margin-right: auto; /* Center the container */
+    padding-left: 1.5rem; /* Add some padding to the sides */
+    padding-right: 1.5rem; /* Add some padding to the sides */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__title {
+    font-size: 2rem; /* Slightly larger title as in the image */
+    color: #333; /* Darker grey for the title */
+    margin-bottom: 2.5rem; /* Increased spacing below title */
+    font-weight: 700; /* Bolder title */
+}
+
+/* --- Navigation List --- */
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem; /* Increased space between links */
+    margin-bottom: 3rem; /* Increased spacing below list */
+    padding: 0;
+    list-style: none;
+}
+
+.footer__link {
+    color: #555; /* Slightly lighter dark grey for links */
+    font-size: 1rem; /* Standard font size */
+    font-weight: 500; /* Medium weight */
+    transition: color 0.3s;
+    text-decoration: none; /* Ensure no underline */
+}
+
+.footer__link:hover {
+    color: #000; /* Darker on hover */
+}
+
+/* --- Social Links --- */
+
+.footer__social {
+    display: flex;
+    column-gap: 1.5rem; /* Space between social icons */
+    margin-bottom: 4rem; /* Increased spacing below social icons */
+}
+
+.footer__social-link {
+    background-color: #333; /* Dark grey background for icons */
+    color: #fff; /* White icons */
+    font-size: 1.25rem; /* Icon size */
+    padding: 0.75rem; /* Padding for the square background */
+    border-radius: 8px; /* Slightly rounded corners for the square, not circular */
+    display: inline-flex;
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon horizontally */
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none; /* No underline */
+}
+
+.footer__social-link:hover {
+    background-color: #555; /* Slightly lighter dark grey on hover */
+    color: #fff;
+}
+
+/* --- Copyright Text --- */
+
+.footer__copy {
+    display: block;
+    margin-top: 0; /* Reset margin top as it's at the end */
+    text-align: center;
+    font-size: 0.9rem; /* Slightly larger font size */
+    color: #777; /* Lighter grey for copyright */
+}
+
+/* ==================== BREAKPOINTS (Responsiveness) ==================== */
+
+/* For smaller screens, the current flex-direction: column and centered alignment works well.
+   The image you provided suggests a desktop view, so the column layout
+   is suitable for smaller screens. No specific media queries for
+   layout changes are strictly necessary unless you wanted a different
+   arrangement for extremely wide screens, but the current centering works. */
+
+@media screen and (min-width: 768px) {
+    /* On larger screens, content can stay stacked as per the image */
+    /* Adjust container max-width if needed for very large displays */
+    .footer__container {
+        max-width: 800px; /* Example, adjust as needed */
+    }
+}

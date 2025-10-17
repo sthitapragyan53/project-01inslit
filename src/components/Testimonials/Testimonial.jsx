@@ -22,7 +22,7 @@ const TestimonialPage = () => {
             {/* Animation for the Header Section */}
             <div className="testimonial-header" data-aos="fade-down">
                 <p className="subtitle">CUSTOMER FEEDBACK</p>
-                <h2>What Our Clients Say</h2>
+                <h2>What Our Customer Say</h2>
                 <p className="description">
                     Don't just take our word for it—read real reviews from our satisfied customers.
                 </p>

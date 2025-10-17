@@ -3,33 +3,33 @@ export const testimonials = [
   {
     id: 1,
     name: "Aisha Khan",
-    title: "Startup Founder",
+    
     rating: 5,
-    quote: "The team delivered an outstanding platform! They were professional, responsive, and truly understood our vision from day one. Our user engagement has tripled since launch.",
+    quote: "The Golden Fork is a hidden gem! 💎 The Spicy Salmon Bowl and Truffle Fries were amazing and healthy. Great service and a perfect dinner spot. ⭐️⭐️⭐️⭐️⭐️",
     image: "https://i.pravatar.cc/150?img=1",
   },
   {
     id: 2,
     name: "John Miller",
-    title: "E-commerce Manager",
+    
     rating: 4,
-    quote: "Excellent results! We saw a 40% increase in conversions after implementing their design recommendations. Highly recommend their UX/UI expertise.",
+    quote: " Sushi Delight's Rainbow Roll is fresh and flawless! 🍣 💌 The atmosphere is peaceful and the staff is wonderful. A must-visit for authentic Japanese. Top marks! 💯",
     image: "https://i.pravatar.cc/150?img=68",
   },
   {
     id: 3,
     name: "Sarah Lee",
-    title: "Senior Developer",
+    
     rating: 5,
-    quote: "As a developer, I appreciate clean code. The structure was impeccable and easy to integrate. A truly seamless experience.",
+    quote: "Pasta Palace has the best Carbonara outside of Rome! 🍝 Rich, creamy, and truly authentic. Fast service and lovely ambiance. Will be back for the Tiramisu! 🇮🇹",
     image: "https://i.pravatar.cc/150?img=47",
   },
   {
     id: 4,
     name: "Michael Chen",
-    title: "Small Business Owner",
+    
     rating: 5,
-    quote: "Affordable and fast! They turned our ancient website into a modern, mobile-friendly powerhouse. The support post-launch has been fantastic.",
+    quote: "The Grill Spot knows burgers. 🍔 Their smoky Bacon Deluxe is incredible. Everything is fresh, hot, and served with perfectly crispy fries. Classic American perfection. 🍟",
     image: "https://i.pravatar.cc/150?img=52",
   },
 ];

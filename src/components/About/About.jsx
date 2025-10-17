@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 // Assume you have an image for your profile or brand
-import User from '../../assets/User.png'; 
+import cook from '../../assets/cook.jpg'; 
 
 const AboutMePage = () => {
   return (
@@ -20,27 +20,27 @@ const AboutMePage = () => {
         <div className="about-text-column" data-aos="fade-right">
           <h3>Our Journey</h3>
           <p>
-            Established in 2015, our mission has always been simple: to deliver exceptional digital experiences tailored to our clients' unique goals. What started as a small, passionate team has grown into a full-service agency, but our dedication to **craftsmanship and client satisfaction** remains our core focus.
+            Established in 2018, our mission remains simple: to deliver exceptional, authentic flavors inspired by cherished family tradition. What began as a small, passionate venture has grown, but our focus on culinary craftsmanship and client satisfaction is still our core 🍽️✨.
           </p>
           
           <h3>What We Do</h3>
           <p>
-            We specialize in developing high-performance web applications using modern stacks like **React, Node.js, and MongoDB**. From conceptual design and robust API development to scalable deployment, we handle the entire process. We believe technology should be an asset, not a hurdle.
+             We meticulously source local, high-quality ingredients to craft a menu that balances classic comfort with modern, healthy innovations. Our chefs apply time-honored techniques to every dish, ensuring consistent quality and unforgettable taste. We aim to create more than just a meal; we provide a complete, warm dining experience for our community.
           </p>
           
           {/* Stats Block - Fades up separately after the text */}
           <div className="about-stats" data-aos="fade-up" data-aos-delay="300">
             <div className="stat-item">
               <span className="stat-number">8+</span>
-              <p className="stat-label">Years Experience</p>
+              <p className="stat-label">Years Experience Serving</p>
             </div>
             <div className="stat-item">
-              <span className="stat-number">150+</span>
-              <p className="stat-label">Projects Completed</p>
+              <span className="stat-number">350+</span>
+              <p className="stat-label"> Online orderd today</p>
             </div>
             <div className="stat-item">
               <span className="stat-number">98%</span>
-              <p className="stat-label">Client Retention</p>
+              <p className="stat-label">Client satisfaction</p>
             </div>
           </div>
           
@@ -48,7 +48,7 @@ const AboutMePage = () => {
         
         {/* Right Column: Image - Slides in from the right */}
         <div className="about-image-column" data-aos="fade-left">
-          <img src={User} alt="Our Team / Profile" className="profile-img" />
+          <img src={cook} alt="Our Team / Profile" className="profile-img" />
         </div>
         
       </div>

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'; // 1. Import useEffect
 import AOS from 'aos'; // 2. Import AOS library
+
 import 'aos/dist/aos.css'; // 3. Import AOS CSS styles
 import './App.css';
 import Header from './components/Headers/Header';
@@ -8,6 +9,7 @@ import About from './components/About/About';
 import Menu from './components/Menu/Menu';
 import Testimonial from './components/Testimonials/Testimonial';
 import DeliverySection from './components/DeliverySection/DeliverySection';
+import Footer from './components/Footer/Footer.jsx';
 
 const App = () => {
     // Initialize AOS when the application component mounts
@@ -29,6 +31,7 @@ const App = () => {
                 <Testimonial/>
                 <About/>
             </main>
+             <Footer/>
         </>
     )
 }

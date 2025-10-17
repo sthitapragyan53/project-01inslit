@@ -8,15 +8,13 @@ const Header = () => {
     <header className='navb'>
         <div className="logo">
             <img src={logo} alt ="Logo"/>
-           <h2> Foodii</h2>
+           <h3> Foodii 🥗</h3>
         </div>
         <nav>
           <a href="#">Buy Online</a>
           <a href="#">Menu</a>
-          <a href="#">Recipes</a>
-          <a href="#">Buffet</a>
+          <a href="#">Offer</a>
           <a href="#">About us</a>
-          <a href="#">Reservation</a>
           <a href="#">Contact</a>
 
         </nav>
